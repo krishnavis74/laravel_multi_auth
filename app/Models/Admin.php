@@ -23,7 +23,6 @@ class Admin extends Authenticatable
         'admin_email',
         'password',
     ];
-
     /**
      * The attributes that should be hidden for serialization.
      *

@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -36,7 +36,6 @@ Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth:admin'])->name('admin_dashboard');
 require __DIR__ . '/admin.php';
-
 
 ////////////////////////////TEACHER/////////////////////////////////////////////
 Route::get('/teacher_dashboard', function () {
